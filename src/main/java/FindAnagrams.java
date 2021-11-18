@@ -1,14 +1,24 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
 public class FindAnagrams {
     public List<Integer> findAnagrams(String s, String p) {
-        int len = p.length();
-        HashSet<String> set = reRank(p);
+        int m = s.length(), n = p.length();
         List<Integer> res = new ArrayList<>();
-        for(int i = 0; i <= s.length() - len; i++){
-            if(set.contains(s.substring(i, i + len))) res.add(i);
+        if(m < n) return res;
+        int[] sCnt = new int[26];
+        int[] pCnt = new int[26];
+        for(int i = 0; i < n; i++){
+            sCnt[s.charAt(i) - 'a']++;
+            pCnt[p.charAt(i) - 'a']++;
+        }
+        if(Arrays.equals(sCnt, pCnt)) res.add(0);
+        for(int i = 1; i < m-n+1; i++){
+            sCnt[s.charAt(i-1) - 'a']--;
+            sCnt[s.charAt(i+n-1) - 'a']++;
+            if(Arrays.equals(sCnt, pCnt)) res.add(i);
         }
         return res;
     }
