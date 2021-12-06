@@ -9,7 +9,9 @@ public class test {
             x  = x* b;
         }
         NumSubarrayProductLessThanK n = new NumSubarrayProductLessThanK();
-        System.out.println(n.numSubarrayProductLessThanK(a, 19));
-        System.out.println(x);
+        Person jack = new Person("jack", 2384);
+        Person ma = jack;
+        Arrays.sort(a);
+        System.out.println(a);
     }
 }
