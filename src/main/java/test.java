@@ -16,5 +16,6 @@ public class test {
         System.out.println("Java虚拟机最大内存" + maxMemory + "字节" + maxMemory/1024/1024 + "MB");
         long totalMemory = Runtime.getRuntime().totalMemory();
         System.out.println("Java虚拟机内存总量" + totalMemory + "字节" + totalMemory/1024/1024 + "MB");
+        System.out.println("".equals(p.substring(3)));
     }
 }
