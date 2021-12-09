@@ -2,6 +2,8 @@ public class Person {
     public String name;
     public Integer age;
 
+    Person(){};
+
     Person(String name, int age){
         this.name = name;
         this.age = age;

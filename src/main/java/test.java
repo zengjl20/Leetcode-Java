@@ -1,3 +1,4 @@
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -17,5 +18,14 @@ public class test {
         long totalMemory = Runtime.getRuntime().totalMemory();
         System.out.println("Java虚拟机内存总量" + totalMemory + "字节" + totalMemory/1024/1024 + "MB");
         System.out.println("".equals(p.substring(3)));
+        try{
+            Class c = Student.class;
+            Person person = (Person) c.newInstance();
+            System.out.println(person.getInformation("zeng", 18));
+        } catch (InstantiationException e){
+            e.printStackTrace();
+        }catch (IllegalAccessException e){
+            e.printStackTrace();
+        }
     }
 }
