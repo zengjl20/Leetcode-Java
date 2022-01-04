@@ -5,6 +5,7 @@ public class test {
         String[] a = {"10", "0001", "111001", "1", "0"};
         FindMaxForm findMaxForm = new FindMaxForm();
         int x = 1;
-        System.out.println(findMaxForm.findMaxForm(a, 5, 3));
+        System.out.println(31 * 'a');
+        StringBuffer stringBuffer = new StringBuffer();
     }
 }
