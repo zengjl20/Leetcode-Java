@@ -2,15 +2,15 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        StringBuffer stringBuffer = new StringBuffer();
-        int h;
-        System.out.println(stringBuffer.hashCode());
-        System.out.println((h = stringBuffer.hashCode()) ^ (h >>> 16));
-        NodeDemo node = new NodeDemo(2);
-        node.next = new NodeDemo(3);
-        NodeDemo p = node.next;
-        p.setValue(4);
-        System.out.println(node.next.getValue());
+        String value1 = "https://javaguide.cn/";
+        String value2 = "https://github.com/Snailclimb";
+        MyBloomFilter filter = new MyBloomFilter();
+        System.out.println(filter.contains(value1));
+        System.out.println(filter.contains(value2));
+        filter.add(value1);
+        filter.add(value2);
+        System.out.println(filter.contains(value1));
+        System.out.println(filter.contains(value2));
     }
 }
 
