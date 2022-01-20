@@ -2,10 +2,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        String value1 = "https://javaguide.cn/";
+        String value1 = "3[a2[c]]";
         String value2 = "https://github.com/Snailclimb";
-        MyBloomFilter filter = new MyBloomFilter();
-        System.out.println(5 / 2);
+        DecodeString decodeString = new DecodeString();
+        System.out.println('A' - 'B');
     }
 }
 
