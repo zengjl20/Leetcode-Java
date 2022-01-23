@@ -1,12 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        String value1 = "42";
-        String value2 = "https://github.com/Snailclimb";
-        MyAtoi myAtoi = new MyAtoi();
-        boolean[] s = new boolean[2];
-        System.out.println();
+        Integer x = 10;
+        List<Integer> list = new ArrayList<>();
+        list.add(x);
+        x = 20;
+        System.out.println(list.toString());
     }
 }
 
