@@ -4,8 +4,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        NumDecodings decodings = new NumDecodings();
-        System.out.println(decodings.numDecodings("11106"));
+        System.out.println(2.0 / 0.0);
+        System.out.println(-2.0 / 0.0);
     }
 }
 
