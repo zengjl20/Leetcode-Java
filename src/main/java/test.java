@@ -4,8 +4,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(2.0 / 0.0);
-        System.out.println(-2.0 / 0.0);
+        Caculate caculator = new Caculate();
+        String s = " 3+5 / 2 ";
+        int x = caculator.calculate(s);
     }
 }
 
