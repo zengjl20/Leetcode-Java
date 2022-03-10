@@ -1,12 +1,19 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class test {
     public static void main(String[] args) throws InterruptedException {
-        Caculate caculator = new Caculate();
-        String s = " 3+5 / 2 ";
-        int x = caculator.calculate(s);
+        test test = new test();
+        System.out.println(test.sum());
+        Map<Integer, Integer> map = new HashMap<>();
+        List<Integer> list = new ArrayList<>();
+    }
+
+    public int sum() {
+        return 9;
     }
 }
 
